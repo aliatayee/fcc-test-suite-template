@@ -1,6 +1,204 @@
-#welcome-section{
-    text-align: center;;
+
+html,
+body {
+width: 100%;
+height: 100%;
+font-family: Arial, Helvetica, serif !important;
+}
+
+.container {
+    padding: 15px 25px;
 }
 #projects{
-    text-align: center;;
+margin: 0px;
+ 
 }
+a {
+    font-size: 12pt;
+    font-weight: 600;
+    color: rgb(34, 34, 34);
+    text-decoration: none;
+    letter-spacing: 1pt;
+
+    text-transform: lowercase;
+}
+
+h1 {
+  
+    font-weight: 600;
+    font-size: 76pt;
+}
+
+h2 {
+   
+    font-weight: 600;
+    font-size: 64pt;
+}
+
+h3 {
+  
+    font-size: 16pt;
+    font-weight: 400;
+}
+
+p {
+  
+    font-size: 14pt;
+}
+
+.big {
+    font-size: 20pt;
+}
+
+span.overlay {
+    font-weight: 400;
+    font-size: 20pt;
+}
+
+nav#navbar {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(228, 228, 228);
+}
+div.navigation-container > 
+ul.navigation-list {
+    display: flex;
+    flex-direction: row;
+}
+
+ul.navigation-list >
+li.navigation-list {
+list-style: none;
+margin-left: 35px;
+}
+section#welcome-section {
+    height: 100vh;
+}
+
+section#welcome-section >
+div.container {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+}
+header#welcome-header {
+    text-align: center;
+    display: inherit;
+    flex-direction: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+}
+header#welcome-header > 
+div.text-wrapper {
+    width: 65%;
+}
+section#projects {
+    min-height:50vh;
+    background-color: black;
+    color: white;
+}
+header#projects-header {
+    text-align: center;
+    display: inherit;
+    flex-direction: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+}
+
+div.projects-button {
+    padding: 50px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    width: 150px;
+    padding: 15px 25px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    border: none;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+
+section#banner-section {
+    height: 90vh;
+}
+
+section#banner-section >
+div.container {
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+}
+
+header#banner-header {
+    text-align: center;
+    display: inherit;
+    flex-direction: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+}
+
+  /* Responsive */
+  @media only screen and (max-width: 600px) {
+    h1 {
+        font-weight: 600;
+        font-size: 76pt;
+        line-height: 76pt;
+    }
+
+    h2 {
+    
+        font-weight: 600;
+        font-size: 54pt;
+        line-height: 54pt;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    header#welcome-header > 
+    div.text-wrapper >
+    p {
+        margin-top: 15px
+    }
+  }
+  
+@media only screen and (max-width: 600px) {
+    section#project {
+        padding-top: 50px;
+    }
+
+    header#projects-header >
+    div.text-wrapper > 
+    p {
+        margin-top: 25px
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    section#banner-section {
+        padding-top: 50px;
+    }
+
+    header#banner-header >
+    div.text-wrapper > 
+    p {
+        margin-top: 25px
+    }
+
+
+  }
